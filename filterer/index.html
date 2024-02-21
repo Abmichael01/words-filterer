@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words Filterer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="alert">Copied to clipboard</div>
+    <header>
+        <h2>Words Filterer</h2>
+    </header>
+
+    <div class="main">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Paste the text to flter here"></textarea>
+
+        <div class="controls">
+            <div class="c1">
+                <h4>Filter words that</h4>
+                <select id="" class="position">
+                    <option value="start">Starts With</option>
+                    <option value="end">Ends with</option>
+                    <option value="include">Includes</option>
+                </select>
+                <input type="text" autocomplete="off" placeholder="type keyword here" class="keyword">
+            </div>
+
+            <div class="c3">
+                <h4>Separator:</h4>
+                <select name="" id="" class="separator">
+                    <option value="new-line">New Line</option>
+                    <option value="comma">Comma</option>
+                    <option value="space">Space</option>
+                </select>
+                <input type="text" autocomplete="off" placeholder="Put separator here" class="separator-input">
+            </div>
+
+            <div class="c4">
+                <h4>Word Count</h4>
+                <input type="text" value="0" id="" class="word-count" readonly>
+            </div>
+
+            <div class="c2">
+                <button class="filter">Filter</button>
+                <button class="copy">Copy</button>
+                <button class="clear">Clear All</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

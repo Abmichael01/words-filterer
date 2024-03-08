@@ -98,6 +98,7 @@ filterButt.addEventListener("click", ()=>{
                 }, 5000)
         }else{
             alert.textContent = filteredTexts.length + " words matches the filter"
+            wordCount.value = filteredTexts.length
             filteredTexts = filteredTexts.join(sep)
             text.value = filteredTexts
         }
@@ -109,7 +110,7 @@ filterButt.addEventListener("click", ()=>{
             alert.classList.remove("alert-active")
         }, 5000)
 
-        wordCount.value = filteredTexts.length
+        
         
 
         

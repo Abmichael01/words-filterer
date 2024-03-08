@@ -115,10 +115,6 @@ filterButt.addEventListener("click", ()=>{
 
         
     }
-
-    
-
-    
     
 })
 
